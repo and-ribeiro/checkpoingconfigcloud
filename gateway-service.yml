@@ -4,8 +4,8 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: movie-service
-          uri: lb://MOVIE-SERVICE/
+        - id: movie
+          uri: lb://movie-service/
           predicates:
            - Path=/movies/**
         - id: catalog
