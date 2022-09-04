@@ -11,4 +11,4 @@ spring:
         - id: catalog
           uri: lb://CATALOG-SERVICE
           predicates:
-           - Path=catalog/**
+           - Path=/catalog/**
